@@ -5,15 +5,15 @@ public class Main {
 
         Scanner sc1 = new Scanner(System.in);
 
-        System.out.println("Välkommen, här finns 10 val, du kan välja en av följande planeter för att veta mer om den, tryck F för att fortsätta!");
+        System.out.println("Välkommen, här finns 10 val, du kan välja en av följande planeter för att veta mer om den, tryck F för att fortsätta!");  //Intro
 
-        sc1.nextLine();
+        sc1.nextLine();  //NextLine of outprint
 
         while (true){
             Planetval();
             String val = sc1.nextLine();
             if (val.equals("1")) {
-                System.out.println("Du valde att få mer information om Solen");
+                System.out.println("Du valde att få mer information om Solen");         //Different planets to choose to read more about! 
                 Solen(sc1);
             }  else if (val.equals("2")) {
                 System.out.println("Du valde att få mer information om Merkurius");
